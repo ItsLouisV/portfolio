@@ -24,7 +24,7 @@ export default function Projects() {
       icon: <Sparkles size={24} />,
       gradient: 'linear-gradient(135deg, #a855f7 0%, #6366f1 100%)',
       demoUrl: 'https://github.com/ItsLouisV',
-      githubUrl: 'https://github.com/ItsLouisV'
+      githubUrl: 'https://github.com/ItsLouisV/cvision'
     },
     {
       id: 2,
