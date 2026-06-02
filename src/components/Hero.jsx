@@ -92,7 +92,7 @@ export default function Hero() {
               </div>
               <div className="overlay-stat">
                 <span className="stat-num">2027</span>
-                <span className="stat-label">Năm tốt nghiệp</span>
+                <span className="stat-label">Năm tốt nghiệp dự kiến</span>
               </div>
             </div>
           </div>
