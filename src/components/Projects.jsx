@@ -31,7 +31,7 @@ export default function Projects() {
       title: 'Social Networking Mobile Application',
       category: 'react-native',
       type: 'Dự án ứng dụng di động',
-      timeline: 'Th2/2025 - Th10/2025',
+      timeline: 'Th4/2026 - Hiện tại',
       tech: ['React Native', 'Expo', 'Supabase', 'Supabase Realtime'],
       description: 'Ứng dụng mạng xã hội thu nhỏ trên thiết bị di động, tích hợp đầy đủ tính năng tương tác người dùng hiện đại và cơ chế đồng bộ hóa tin nhắn tức thời.',
       bullets: [
