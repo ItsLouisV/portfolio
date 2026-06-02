@@ -84,7 +84,7 @@ export default function Hero() {
         <div className="hero-image-wrapper">
           <div className="hero-image-glow"></div>
           <div className="hero-image-card glass-panel">
-            <img src="/avt2.jpg" alt="Louis V Avatar" className="hero-avatar" />
+            <img src="/avt1.jpg" alt="Louis V Avatar" className="hero-avatar" />
             <div className="hero-image-overlay">
               <div className="overlay-stat">
                 <span className="stat-num">3+</span>
