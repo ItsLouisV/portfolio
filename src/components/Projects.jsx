@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, Cpu, Globe, Zap, Smartphone } from 'lucide-react';
+import { ExternalLink, Smartphone, Sparkles, Code2, Calendar } from 'lucide-react';
 import './Projects.css';
 
 export default function Projects() {
@@ -8,47 +8,58 @@ export default function Projects() {
   const projectsData = [
     {
       id: 1,
-      title: 'Hệ thống Nhà thông minh IoT',
-      category: 'iot',
-      tech: ['React', 'NodeJS', 'ESP32', 'MQTT', 'MongoDB'],
-      description: 'Hệ thống quản lý thiết bị gia dụng thời gian thực. Firmware ESP32 kết nối với Broker MQTT, Web dashboard hiển thị thông số cảm biến và điều khiển relay tức thì.',
-      icon: <Cpu size={24} />,
-      gradient: 'linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%)',
-      demoUrl: 'https://demo.example.com',
+      title: 'AI-Powered Job Platform & Mock Interview App',
+      category: 'react-native',
+      type: 'Dự án chính (Main Project)',
+      timeline: 'Th11/2025 - Hiện tại',
+      tech: ['React Native', 'Expo', 'Supabase', 'AI APIs', 'TypeScript'],
+      description: 'Ứng dụng di động hỗ trợ tìm kiếm việc làm và chuẩn bị phỏng vấn đột phá, tích hợp công nghệ AI tiên tiến nhằm phân tích câu trả lời của ứng viên và phản hồi thông minh trong thời gian thực.',
+      bullets: [
+        'Phát triển ứng dụng di động tìm kiếm việc làm và chuẩn bị phỏng vấn, tích hợp các tính năng dựa trên AI để giả lập các tình huống phỏng vấn thực tế.',
+        'Tích hợp các tính năng AI để phân tích câu trả lời của người dùng và mô phỏng các buổi phỏng vấn thử nghiệm.',
+        'Thiết kế hệ thống luyện tập phỏng vấn tương tác cao kèm đánh giá và phản hồi thời gian thực.',
+        'Xây dựng tích hợp backend tối ưu và khả năng mở rộng bằng Supabase cho xác thực người dùng và quản lý cơ sở dữ liệu.',
+        'Tập trung nâng cao trải nghiệm người dùng (UX) thông qua hệ thống đề xuất thông minh và giao diện hiện đại.'
+      ],
+      icon: <Sparkles size={24} />,
+      gradient: 'linear-gradient(135deg, #a855f7 0%, #6366f1 100%)',
+      demoUrl: 'https://github.com/ItsLouisV',
       githubUrl: 'https://github.com/ItsLouisV'
     },
     {
       id: 2,
-      title: 'Trang quản lý SaaS Dashboard',
-      category: 'web',
-      tech: ['ReactJS', 'Vite', 'Redux', 'Chart.js', 'Tailwind'],
-      description: 'Nền tảng quản trị phân tích số liệu tài chính chuyên sâu. Thiết kế giao diện trực quan với biểu đồ thời gian thực, bảng tương tác nâng cao và chế độ dark mode mượt mà.',
-      icon: <Globe size={24} />,
-      gradient: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)',
-      demoUrl: 'https://demo.example.com',
-      githubUrl: 'https://github.com/ItsLouisV'
+      title: 'Social Networking Mobile Application',
+      category: 'react-native',
+      type: 'Dự án ứng dụng di động',
+      timeline: 'Th2/2025 - Th10/2025',
+      tech: ['React Native', 'Expo', 'Supabase', 'Supabase Realtime'],
+      description: 'Ứng dụng mạng xã hội thu nhỏ trên thiết bị di động, tích hợp đầy đủ tính năng tương tác người dùng hiện đại và cơ chế đồng bộ hóa tin nhắn tức thời.',
+      bullets: [
+        'Phát triển ứng dụng mạng xã hội di động với đầy đủ tính năng xác thực bảo mật, đăng bài viết và quản lý trang cá nhân người dùng.',
+        'Triển khai hệ thống nhắn tin trò chuyện thời gian thực mượt mà bằng Supabase Realtime.',
+        'Thiết kế giao diện người dùng hiện đại, tinh tế với các hiệu ứng chuyển động mượt mà và phong cách kính mờ (glassmorphism).'
+      ],
+      icon: <Smartphone size={24} />,
+      gradient: 'linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%)',
+      demoUrl: 'https://mini-social-louis.vercel.app',
+      githubUrl: 'https://github.com/ItsLouisV/mini-social'
     },
     {
       id: 3,
-      title: 'Nông nghiệp Thông minh Tự động',
-      category: 'iot',
-      tech: ['Embedded C', 'Arduino', 'ESP8266', 'Supabase', 'NextJS'],
-      description: 'Hệ thống đo độ ẩm đất, nhiệt độ, ánh sáng và tự động tưới nước. Gửi cảnh báo về ứng dụng web và điện thoại thông qua Firebase Realtime Database.',
-      icon: <Zap size={24} />,
-      gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
-      demoUrl: 'https://demo.example.com',
-      githubUrl: 'https://github.com/ItsLouisV'
-    },
-    {
-      id: 4,
-      title: 'Mạng xã hội di động Mini-Social',
-      category: 'web',
-      tech: ['Flutter', 'Dart', 'Supabase', 'Provider', 'PostgreSQL'],
-      description: 'Ứng dụng mạng xã hội thu nhỏ trên thiết bị di động. Hỗ trợ người dùng đăng bài viết, chia sẻ ảnh đa phương tiện, tương tác thả tim, bình luận thời gian thực và bảo mật qua Supabase.',
-      icon: <Smartphone size={24} />,
+      title: 'Basic Flutter Application',
+      category: 'flutter',
+      type: 'Dự án học tập (Learning)',
+      timeline: 'Th3/2026 - Hiện tại',
+      tech: ['Flutter', 'Dart', 'Widget System', 'UI Navigation'],
+      description: 'Ứng dụng tìm hiểu thực hành hệ sinh thái Flutter, tập trung nghiên cứu tối ưu hóa hiệu năng vẽ widget và quản lý trạng thái luồng người dùng.',
+      bullets: [
+        'Xây dựng ứng dụng di động cơ bản để khám phá chuyên sâu kiến trúc đa nền tảng và hệ thống Widget linh hoạt của Flutter.',
+        'Triển khai giao diện người dùng trực quan và cơ chế điều hướng qua lại giữa các màn hình hiệu quả.'
+      ],
+      icon: <Code2 size={24} />,
       gradient: 'linear-gradient(135deg, #02569B 0%, #0175C2 100%)',
-      demoUrl: 'https://mini-social-louis.vercel.app',
-      githubUrl: 'https://github.com/ItsLouisV/mini-social'
+      demoUrl: 'https://github.com/ItsLouisV',
+      githubUrl: 'https://github.com/ItsLouisV'
     }
   ];
 
@@ -64,7 +75,7 @@ export default function Projects() {
             Dự án <span className="gradient-text">Nổi Bật</span>
           </h2>
           <p className="section-subtitle">
-            Các sản phẩm thực tế tôi đã thiết kế phần cứng và lập trình phần mềm
+            Các ứng dụng di động thực tế tôi đã thiết kế giao diện và lập trình hoàn thiện từ CV của tôi
           </p>
         </div>
 
@@ -77,16 +88,16 @@ export default function Projects() {
             Tất cả
           </button>
           <button
-            className={`filter-btn ${filter === 'web' ? 'active' : ''}`}
-            onClick={() => setFilter('web')}
+            className={`filter-btn ${filter === 'react-native' ? 'active' : ''}`}
+            onClick={() => setFilter('react-native')}
           >
-            Web & Mobile
+            React Native & AI
           </button>
           <button
-            className={`filter-btn ${filter === 'iot' ? 'active' : ''}`}
-            onClick={() => setFilter('iot')}
+            className={`filter-btn ${filter === 'flutter' ? 'active' : ''}`}
+            onClick={() => setFilter('flutter')}
           >
-            IoT / Hardware
+            Flutter & Dart
           </button>
         </div>
 
@@ -104,13 +115,31 @@ export default function Projects() {
 
               {/* Info content */}
               <div className="project-info">
+                <div className="project-header-meta">
+                  <span className="project-timeline">
+                    <Calendar size={13} /> {project.timeline}
+                  </span>
+                  <span className="project-type-badge">{project.type}</span>
+                </div>
+
+                <h3 className="project-card-title">{project.title}</h3>
+                <p className="project-card-desc">{project.description}</p>
+
+                {/* CV Bullet points with custom premium design */}
+                <ul className="project-bullets">
+                  {project.bullets.map((bullet, bIdx) => (
+                    <li key={bIdx} className="project-bullet-item">
+                      <span className="bullet-dot"></span>
+                      <span className="bullet-text">{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+
                 <div className="project-tech-tags">
                   {project.tech.map((tag, tIdx) => (
                     <span key={tIdx} className="tech-tag">{tag}</span>
                   ))}
                 </div>
-                <h3 className="project-card-title">{project.title}</h3>
-                <p className="project-card-desc">{project.description}</p>
 
                 <div className="project-links">
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-link-btn" aria-label="GitHub Repository">

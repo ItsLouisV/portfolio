@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Briefcase, GraduationCap, Calendar, Award } from 'lucide-react';
+import { Briefcase, GraduationCap, Calendar } from 'lucide-react';
 import './Resume.css';
 
 export default function Resume() {
@@ -7,59 +7,49 @@ export default function Resume() {
 
   const experienceData = [
     {
-      role: 'Kỹ sư Web & IoT Fullstack',
-      company: 'SmartHome Solutions JSC',
-      period: '2024 - Hiện tại',
-      description: 'Chịu trách nhiệm thiết kế và lập trình các thiết bị điều khiển thông minh ESP32 kết nối với dịch vụ Web điều khiển bằng ReactJS và NodeJS thông qua WebSocket & MQTT.',
+      role: 'Lập trình viên React Native & AI (Main Developer)',
+      company: 'Dự án AI-Powered Job & Mock Interview App',
+      period: '11/2025 - Hiện tại',
+      description: 'Chịu trách nhiệm thiết kế toàn bộ kiến trúc di động và tích hợp các dịch vụ AI nâng cao cho ứng dụng tìm việc & phỏng vấn giả lập.',
       achievements: [
-        'Xây dựng thành công dashboard quản lý nhà thông minh hỗ trợ 1000+ thiết bị kết nối đồng thời với thời gian phản hồi dưới 100ms.',
-        'Thiết kế kiến trúc hệ thống backend NodeJS tối ưu hóa hiệu suất truy vấn, giảm 30% tải CPU.',
-        'Đồng phát triển ứng dụng di động React Native đồng bộ hóa thời gian thực.'
+        'Phát triển ứng dụng di động đa nền tảng bằng React Native và Expo giúp người dùng chuẩn bị phỏng vấn với các tình huống giả lập thông minh.',
+        'Tích hợp các mô hình AI APIs phân tích câu trả lời, giọng nói và văn bản của người dùng để trả về đánh giá thời gian thực.',
+        'Kết nối dịch vụ đám mây Supabase làm hạ tầng backend cho việc quản lý cơ sở dữ liệu và xác thực người dùng an toàn.'
       ]
     },
     {
-      role: 'Nhà phát triển Frontend',
-      company: 'DevVision Global',
-      period: '2022 - 2024',
-      description: 'Lập trình viên ReactJS phát triển các sản phẩm phần mềm SaaS cao cấp phục vụ doanh nghiệp trong và ngoài nước.',
+      role: 'Lập trình viên React Native',
+      company: 'Dự án Social Networking Mobile App',
+      period: '02/2025 - 10/2025',
+      description: 'Lập trình ứng dụng mạng xã hội thu nhỏ trên nền tảng di động với phong cách thiết kế hiện đại và hiệu năng cao.',
       achievements: [
-        'Lập trình 12+ trang dashboard responsive hoàn hảo sử dụng ReactJS, Redux Toolkit và CSS Modules.',
-        'Cải thiện hiệu năng tải trang web bằng cách áp dụng code splitting và tối ưu hóa tài nguyên hình ảnh (đạt 90+ điểm Lighthouse).',
-        'Tương tác trực tiếp với khách hàng quốc tế để làm rõ yêu cầu nghiệp vụ và bàn giao sản phẩm đúng hạn.'
+        'Xây dựng các module chức năng chính gồm: Đăng ký/đăng nhập, bảng tin bài viết, trang cá nhân và theo dõi trạng thái.',
+        'Tích hợp giải pháp nhắn tin trò chuyện tức thì (chat) sử dụng cơ chế Supabase Realtime.',
+        'Sáng tạo giao diện Glassmorphism độc đáo kết hợp micro-animations mượt mà tối ưu cảm xúc người dùng.'
       ]
     },
     {
-      role: 'Thực tập sinh IoT',
-      company: 'TechLab Innovation',
-      period: '06/2022 - 12/2022',
-      description: 'Nghiên cứu các giải pháp phần cứng nhúng cơ bản và tích hợp truyền thông không dây.',
+      role: 'Lập trình viên Flutter (Dự án Học tập)',
+      company: 'Dự án Basic Flutter Application',
+      period: '03/2026 - Hiện tại',
+      description: 'Nghiên cứu nâng cao về kiến trúc phát triển ứng dụng di động đa nền tảng bằng hệ sinh thái Flutter & Dart.',
       achievements: [
-        'Lập trình firmware C/C++ cho vi điều khiển Arduino và ESP8266.',
-        'Xây dựng demo hệ thống tưới cây tự động gửi dữ liệu cảm biến đất lên cloud Firebase.'
+        'Xây dựng và thực hành trên hệ thống Widget phân cấp của Flutter để tối ưu giao diện.',
+        'Triển khai các cơ chế điều hướng màn hình (navigation) phức tạp và quản lý trạng thái ứng dụng hiệu quả.'
       ]
     }
   ];
 
   const educationData = [
     {
-      degree: 'Kỹ sư Công nghệ Thông tin',
-      institution: 'Đại học Bách Khoa',
-      period: '2020 - 2024',
-      description: 'Chuyên ngành Hệ thống thông tin và Mạng máy tính. Tốt nghiệp loại Giỏi.',
+      degree: 'Cử nhân Công nghệ Thông tin',
+      institution: 'Đại học Thủ Dầu Một (Thu Dau Mot University)',
+      period: '2023 - 2027 (Dự kiến)',
+      description: 'Chuyên ngành Công nghệ thông tin, tập trung chuyên sâu vào lập trình ứng dụng di động và tích hợp AI.',
       achievements: [
-        'Đề tài nghiên cứu khoa học: "Hệ thống giám sát chất lượng không khí đô thị thời gian thực sử dụng mạng cảm biến LoRaWAN" đạt điểm tối đa.',
-        'Đạt giải Nhì cuộc thi Olympic Tin học cấp trường.',
-        'Thành viên ban học tập Câu lạc bộ IoT & Embedded.'
-      ]
-    },
-    {
-      degree: 'Chứng chỉ Lập trình chuyên nghiệp',
-      institution: 'AWS Certified Cloud Practitioner',
-      period: '2024',
-      description: 'Xác thực năng lực thiết kế và triển khai giải pháp điện toán đám mây trên nền tảng Amazon Web Services.',
-      achievements: [
-        'Hiểu sâu sắc về các dịch vụ lõi của AWS (EC2, S3, RDS, Lambda, IoT Core).',
-        'Áp dụng kiến thức triển khai hệ thống thu thập dữ liệu IoT an toàn và có khả năng mở rộng.'
+        'Sinh viên năm cuối tích cực nghiên cứu và phát triển các sản phẩm công nghệ thực tiễn.',
+        'Thành thạo xây dựng sản phẩm hoàn thiện từ thiết kế UI/UX trên Figma đến triển khai thực tế trên Android & iOS.',
+        'Đam mê cập nhật các xu hướng công nghệ mới như AI Chatbots, Trí tuệ nhân tạo tạo sinh và các dịch vụ Cloud thế hệ mới.'
       ]
     }
   ];
@@ -72,7 +62,7 @@ export default function Resume() {
             <span className="gradient-text">Hành Trình</span> Của Tôi
           </h2>
           <p className="section-subtitle">
-            Tóm tắt quá trình học vấn và kinh nghiệm làm việc thực tế
+            Tóm tắt quá trình học vấn cùng các dự án di động thực tế nổi bật từ CV của tôi
           </p>
         </div>
 
@@ -82,13 +72,13 @@ export default function Resume() {
             className={`tab-btn glass-panel ${activeTab === 'experience' ? 'active' : ''}`}
             onClick={() => setActiveTab('experience')}
           >
-            <Briefcase size={18} /> Kinh nghiệm làm việc
+            <Briefcase size={18} /> Các dự án thực tế
           </button>
           <button
             className={`tab-btn glass-panel ${activeTab === 'education' ? 'active' : ''}`}
             onClick={() => setActiveTab('education')}
           >
-            <GraduationCap size={18} /> Học vấn & Chứng chỉ
+            <GraduationCap size={18} /> Học vấn của tôi
           </button>
         </div>
 

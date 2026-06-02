@@ -3,7 +3,7 @@ import { Mail, ArrowRight, Download } from 'lucide-react';
 import './Hero.css';
 
 export default function Hero() {
-  const titles = ['Fullstack Developer', 'Embedded & IoT Engineer', 'UI/UX Enthusiast'];
+  const titles = ['Mobile Application Developer', 'React Native Specialist', 'IT Student @ TDMU'];
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -56,7 +56,7 @@ export default function Hero() {
             <span className="cursor">|</span>
           </h2>
           <p className="hero-description">
-            Đam mê kiến tạo các sản phẩm ứng dụng Web tinh tế, hiệu năng vượt trội và giải pháp phần cứng IoT/Embedded thông minh để giải quyết các bài toán thực tế.
+            Sinh viên Công nghệ Thông tin năm cuối tại Đại học Thủ Dầu Một, chuyên sâu về phát triển ứng dụng di động. Đam mê kiến tạo các ứng dụng thời gian thực và tích hợp AI sử dụng React Native, Supabase và Firebase.
           </p>
 
           <div className="hero-actions">
@@ -88,11 +88,11 @@ export default function Hero() {
             <div className="hero-image-overlay">
               <div className="overlay-stat">
                 <span className="stat-num">3+</span>
-                <span className="stat-label">Năm kinh nghiệm</span>
+                <span className="stat-label">Dự án nổi bật</span>
               </div>
               <div className="overlay-stat">
-                <span className="stat-num">15+</span>
-                <span className="stat-label">Dự án hoàn thành</span>
+                <span className="stat-num">2027</span>
+                <span className="stat-label">Năm tốt nghiệp</span>
               </div>
             </div>
           </div>

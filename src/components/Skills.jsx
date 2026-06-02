@@ -2,20 +2,19 @@ import React from 'react';
 import './Skills.css';
 
 export default function Skills() {
-  const frontendSkills = [
-    { name: 'HTML5 / CSS3', level: 90 },
-    { name: 'JavaScript (ES6+)', level: 85 },
-    { name: 'ReactJS / Vite', level: 85 },
-    { name: 'Responsive Web Design', level: 90 },
-    { name: 'Next.js', level: 70 }
+  const mobileSkills = [
+    { name: 'React Native / Expo', level: 90 },
+    { name: 'JavaScript (ES6+) / TypeScript', level: 85 },
+    { name: 'Flutter / Dart (Basic)', level: 65 },
+    { name: 'Python', level: 60 }
   ];
 
-  const backendAndIotSkills = [
-    { name: 'NodeJS / Express', level: 80 },
-    { name: 'Embedded C / C++', level: 85 },
-    { name: 'ESP32 / Arduino / Sensors', level: 90 },
-    { name: 'MQTT / HTTP / WebSockets', level: 85 },
-    { name: 'Database (SQL, MongoDB)', level: 75 }
+  const backendAndToolsSkills = [
+    { name: 'Supabase / Firebase (Realtime)', level: 85 },
+    { name: 'NodeJS / REST API', level: 75 },
+    { name: 'AI Integration (Chatbot, Simulation)', level: 80 },
+    { name: 'Git / GitHub / Figma / Docker', level: 80 },
+    { name: 'UI/UX Design & Performance Optimization', level: 75 }
   ];
 
   return (
@@ -26,19 +25,19 @@ export default function Skills() {
             Năng lực <span className="gradient-text">Kỹ Năng</span>
           </h2>
           <p className="section-subtitle">
-            Những công cụ công nghệ và mức độ thành thạo trong các dự án thực tế
+            Những ngôn ngữ lập trình, nền tảng di động và công cụ tôi sử dụng thành thạo từ CV
           </p>
         </div>
 
         <div className="skills-grid">
-          {/* Frontend Category */}
+          {/* Mobile & Programming Category */}
           <div className="skills-category glass-panel">
-            <h3 className="category-title">Phát triển Frontend</h3>
+            <h3 className="category-title">Lập trình Di động & Ngôn ngữ</h3>
             <p className="category-desc">
-              Tạo ra giao diện web đẹp mắt, tối ưu hóa SEO và mang lại trải nghiệm người dùng tối ưu nhất trên mọi loại thiết bị.
+              Tập trung phát triển ứng dụng di động chất lượng cao, đa nền tảng sử dụng React Native, Expo và Flutter với trải nghiệm người dùng tối ưu.
             </p>
             <div className="skills-list">
-              {frontendSkills.map((skill, idx) => (
+              {mobileSkills.map((skill, idx) => (
                 <div key={idx} className="skill-item">
                   <div className="skill-info">
                     <span className="skill-name">{skill.name}</span>
@@ -55,14 +54,14 @@ export default function Skills() {
             </div>
           </div>
 
-          {/* Backend & IoT Category */}
+          {/* Backend & Services Category */}
           <div className="skills-category glass-panel">
-            <h3 className="category-title">Backend & Embedded IoT</h3>
+            <h3 className="category-title">Backend, Dịch vụ Cloud & Công cụ</h3>
             <p className="category-desc">
-              Thiết kế cơ sở dữ liệu, APIs thời gian thực và lập trình vi điều khiển tương tác trực tiếp với thế giới vật lý qua internet.
+              Xây dựng kiến trúc backend linh hoạt qua Supabase và Firebase Realtime, tích hợp các mô hình trí tuệ nhân tạo (AI APIs) và tối ưu hóa hệ thống.
             </p>
             <div className="skills-list">
-              {backendAndIotSkills.map((skill, idx) => (
+              {backendAndToolsSkills.map((skill, idx) => (
                 <div key={idx} className="skill-item">
                   <div className="skill-info">
                     <span className="skill-name">{skill.name}</span>

@@ -1,28 +1,28 @@
 import React from 'react';
-import { Cpu, Layers, Users, Sparkles } from 'lucide-react';
+import { Smartphone, Layers, Brain, Database } from 'lucide-react';
 import './About.css';
 
 export default function About() {
   const values = [
     {
-      icon: <Cpu size={24} className="value-icon" />,
-      title: 'IoT & Phần cứng',
-      description: 'Lập trình nhúng và thiết kế hệ thống phần cứng thông minh kết hợp ứng dụng Web.'
+      icon: <Smartphone size={24} className="value-icon" />,
+      title: 'Phát triển Mobile',
+      description: 'Lập trình ứng dụng di động đa nền tảng mượt mà sử dụng React Native, Expo và Flutter.'
     },
     {
       icon: <Layers size={24} className="value-icon" />,
       title: 'Tối ưu Trải nghiệm',
-      description: 'Chú trọng vào hiệu năng cực cao, giao diện trực quan và khả năng responsive mượt mà.'
+      description: 'Tập trung tối ưu hiệu năng vẽ widget, hoạt ảnh chuyển động và tốc độ phản hồi di động.'
     },
     {
-      icon: <Users size={24} className="value-icon" />,
-      title: 'Làm việc Nhóm',
-      description: 'Kỹ năng giao tiếp và cộng tác hiệu quả trong môi trường làm việc Agile linh hoạt.'
+      icon: <Brain size={24} className="value-icon" />,
+      title: 'Tích hợp AI',
+      description: 'Áp dụng các mô hình trí tuệ nhân tạo (AI APIs) giải quyết phỏng vấn và trò chuyện giả lập.'
     },
     {
-      icon: <Sparkles size={24} className="value-icon" />,
-      title: 'Sáng tạo Không ngừng',
-      description: 'Đam mê học hỏi các công nghệ mới và tìm tòi các giải pháp sáng tạo tối ưu nhất.'
+      icon: <Database size={24} className="value-icon" />,
+      title: 'Hạ tầng Cloud',
+      description: 'Sử dụng thuần thục Supabase Realtime và Firebase trong xác thực và quản lý dữ liệu.'
     }
   ];
 
@@ -34,21 +34,21 @@ export default function About() {
             Về <span className="gradient-text">Tôi</span>
           </h2>
           <p className="section-subtitle">
-            Hành trình theo đuổi đam mê công nghệ và định hướng phát triển
+            Hành trình theo đuổi đam mê phát triển ứng dụng di động thông minh
           </p>
         </div>
 
         <div className="about-grid">
           <div className="about-text-container glass-panel">
-            <h3 className="about-heading">Đam mê kết nối thế giới ảo và thế giới thực</h3>
+            <h3 className="about-heading">Chuyên tâm xây dựng ứng dụng di động thông minh</h3>
             <p className="about-paragraph">
-              Xin chào! Mình là <strong>Louis V</strong>, một nhà phát triển phần mềm và kỹ sư IoT đam mê kiến tạo giải pháp công nghệ. Mình bắt đầu hành trình lập trình từ sự tò mò về cách các trang web hoạt động và cách các thiết bị phần cứng có thể giao tiếp với nhau qua internet.
+              Xin chào! Mình là <strong>Nguyễn Văn Linh (ItsLouisV)</strong>, sinh viên năm cuối chuyên ngành Công nghệ thông tin tại Đại học Thủ Dầu Một, định hướng chuyên sâu về phát triển ứng dụng di động.
             </p>
             <p className="about-paragraph">
-              Sở hữu nền tảng vững chắc về phát triển Web (ReactJS, NodeJS) kết hợp cùng kinh nghiệm thiết kế hệ thống IoT (ESP32, Raspberry Pi, cảm biến và các giao thức MQTT/HTTP), mình luôn mong muốn xây dựng các hệ sinh thái hoàn chỉnh từ thiết bị vật lý đến giao diện quản lý trên Web một cách mượt mà và trực quan nhất.
+              Sở hữu niềm đam mê lớn với lập trình di động đa nền tảng, mình tập trung nghiên cứu và làm chủ bộ đôi công nghệ mạnh mẽ: **React Native / Expo** và **Flutter / Dart**. Bên cạnh đó, mình cũng tích lũy nhiều kinh nghiệm tích hợp các giải pháp backend đám mây như **Supabase** và **Firebase**, cũng như tích hợp các tính năng thông minh bằng **AI APIs** để mô phỏng các bài toán thực tiễn.
             </p>
             <p className="about-paragraph">
-              Với phương châm <em>"Biến những điều phức tạp thành trải nghiệm đơn giản"</em>, mình luôn đặt sự tinh tế trong thiết kế và sự tối ưu trong hiệu năng làm kim chỉ nam cho mọi dòng code.
+              Với phương châm đặt trải nghiệm người dùng làm giá trị cốt lõi, mình luôn hướng tới việc viết mã nguồn sạch, tối ưu hóa hiệu năng ứng dụng di động và thiết kế giao diện hiện đại, trực quan nhất.
             </p>
           </div>
 

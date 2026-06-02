@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Send, CheckCircle2 } from 'lucide-react';
+import { Mail, MapPin, Send, CheckCircle2, Phone } from 'lucide-react';
 import './Contact.css';
 
 export default function Contact() {
@@ -59,11 +59,21 @@ export default function Contact() {
 
             <div className="info-card glass-panel">
               <div className="info-icon-wrapper">
+                <Phone size={22} />
+              </div>
+              <div className="info-details">
+                <span className="info-label">Số điện thoại</span>
+                <a href="tel:0385632824" className="info-value">0385632824</a>
+              </div>
+            </div>
+
+            <div className="info-card glass-panel">
+              <div className="info-icon-wrapper">
                 <MapPin size={22} />
               </div>
               <div className="info-details">
                 <span className="info-label">Địa điểm hiện tại</span>
-                <span className="info-value">TP. Thủ Dầu Một, Bình Dương cũ, Việt Nam</span>
+                <span className="info-value">TP. Thủ Dầu Một, Bình Dương, Việt Nam</span>
               </div>
             </div>
 
