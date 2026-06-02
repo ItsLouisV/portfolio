@@ -37,7 +37,7 @@ export default function Contact() {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">
-            Kết <span className="gradient-text">Nối</span> Với Tôi
+            <span className="gradient-text">Kết Nối</span> Với Tôi
           </h2>
           <p className="section-subtitle">
             Gửi tin nhắn hoặc liên hệ trực tiếp để hợp tác phát triển các dự án

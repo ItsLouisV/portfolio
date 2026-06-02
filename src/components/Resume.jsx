@@ -69,7 +69,7 @@ export default function Resume() {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">
-            Hành <span className="gradient-text">Trình</span> của Tôi
+            <span className="gradient-text">Hành Trình</span> Của Tôi
           </h2>
           <p className="section-subtitle">
             Tóm tắt quá trình học vấn và kinh nghiệm làm việc thực tế

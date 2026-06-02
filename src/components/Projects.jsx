@@ -47,7 +47,7 @@ export default function Projects() {
       description: 'Ứng dụng mạng xã hội thu nhỏ trên thiết bị di động. Hỗ trợ người dùng đăng bài viết, chia sẻ ảnh đa phương tiện, tương tác thả tim, bình luận thời gian thực và bảo mật qua Supabase.',
       icon: <Smartphone size={24} />,
       gradient: 'linear-gradient(135deg, #02569B 0%, #0175C2 100%)',
-      demoUrl: 'https://mini-social-khaki.vercel.app',
+      demoUrl: 'https://mini-social-louis.vercel.app',
       githubUrl: 'https://github.com/ItsLouisV/mini-social'
     }
   ];
