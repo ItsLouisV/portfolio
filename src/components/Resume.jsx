@@ -18,6 +18,17 @@ export default function Resume() {
       ]
     },
     {
+      role: 'Lập trình viên Flutter & Supabase',
+      company: 'Dự án Monea - Quản lý chi tiêu cá nhân',
+      period: '05/2026 - Hiện tại',
+      description: 'Phát triển ứng dụng di động quản lý chi tiêu và hoạch định tài chính cá nhân bằng Flutter & Dart kết hợp Supabase cho khả năng lưu trữ đám mây và đồng bộ đa thiết bị.',
+      achievements: [
+        'Thiết kế giao diện di động đa nền tảng bằng hệ thống Widget phân cấp của Flutter, tối ưu trải nghiệm ghi chép thu chi nhanh chóng.',
+        'Sử dụng dịch vụ Supabase Database & Auth để quản lý xác thực người dùng và đồng bộ hóa danh mục giao dịch thời gian thực.',
+        'Sử dụng FL Chart tích hợp cùng SQLite cho phép hiển thị biểu đồ phân tích biến động tài chính mượt mà ngay cả khi ngoại tuyến (Offline-first).'
+      ]
+    },
+    {
       role: 'Lập trình viên React Native',
       company: 'Dự án Social Networking Mobile App',
       period: '02/2025 - 10/2025',

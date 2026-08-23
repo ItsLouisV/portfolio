@@ -87,7 +87,7 @@ export default function Hero() {
             <img src="/avt1.jpg" alt="Louis V Avatar" className="hero-avatar" />
             <div className="hero-image-overlay">
               <div className="overlay-stat">
-                <span className="stat-num">3+</span>
+                <span className="stat-num">4+</span>
                 <span className="stat-label">Dự án nổi bật</span>
               </div>
               <div className="overlay-stat">

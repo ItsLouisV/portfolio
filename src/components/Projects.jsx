@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, Smartphone, Sparkles, Code2, Calendar } from 'lucide-react';
+import { ExternalLink, Smartphone, Sparkles, Code2, Calendar, Wallet } from 'lucide-react';
 import './Projects.css';
 
 export default function Projects() {
@@ -28,6 +28,25 @@ export default function Projects() {
     },
     {
       id: 2,
+      title: 'Monea - Smart Expense Manager App',
+      category: 'flutter',
+      type: 'Dự án ứng dụng di động',
+      timeline: 'Th5/2026 - Hiện tại',
+      tech: ['Flutter', 'Dart', 'Supabase', 'Provider', 'SQLite', 'FL Chart'],
+      description: 'Ứng dụng di động quản lý chi tiêu cá nhân thông minh xây dựng trên nền tảng Flutter & Dart kết hợp backend Supabase, hỗ trợ theo dõi thu chi hàng ngày, phân tích biểu đồ tài chính trực quan và đồng bộ dữ liệu đám mây.',
+      bullets: [
+        'Phát triển ứng dụng di động quản lý tài chính Monea đa nền tảng bằng Flutter & Dart với giao diện hiện đại và tối ưu hiệu năng.',
+        'Kết nối Supabase Cloud Database cho việc xác thực người dùng an toàn, đồng bộ hóa giao dịch thời gian thực và sao lưu dữ liệu đám mây.',
+        'Kết hợp SQLite và kiến trúc Provider (State Management) giúp ứng dụng hoạt động mượt mà ngay cả khi không có kết nối internet (Offline-first).',
+        'Thiết kế hệ thống biểu đồ thống kê chi tiêu trực quan (FL Chart) cùng các tính năng quản lý danh mục thu/chi và cảnh báo hạn mức ngân sách.'
+      ],
+      icon: <Wallet size={24} />,
+      gradient: 'linear-gradient(135deg, #02569B 0%, #059669 100%)',
+      demoUrl: 'https://monea-vn.vercel.app',
+      githubUrl: 'https://github.com/ItsLouisV/monea'
+    },
+    {
+      id: 3,
       title: 'Social Networking Mobile Application',
       category: 'react-native',
       type: 'Dự án ứng dụng di động',
@@ -45,7 +64,7 @@ export default function Projects() {
       githubUrl: 'https://github.com/ItsLouisV/mini-social'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Basic Flutter Application',
       category: 'flutter',
       type: 'Dự án học tập (Learning)',
@@ -91,7 +110,7 @@ export default function Projects() {
             className={`filter-btn ${filter === 'react-native' ? 'active' : ''}`}
             onClick={() => setFilter('react-native')}
           >
-            React Native & AI
+            React Native & Mobile
           </button>
           <button
             className={`filter-btn ${filter === 'flutter' ? 'active' : ''}`}
