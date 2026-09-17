@@ -60,7 +60,7 @@ export default function Projects() {
       ],
       icon: <Smartphone size={24} />,
       gradient: 'linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%)',
-      demoUrl: 'https://mini-social-louis.vercel.app',
+      demoUrl: 'https://viora-vn.vercel.app',
       githubUrl: 'https://github.com/ItsLouisV/mini-social'
     },
     {
